@@ -1,0 +1,41 @@
+[ {
+  "a" : "Note book",
+  "answer" : "Number",
+  "b" : "Text books",
+  "c" : "Lecture",
+  "d" : "Number",
+  "no" : 1,
+  "question" : "Division of outline can be done by use of _________"
+}, {
+  "a" : "Text Books",
+  "answer" : "Note",
+  "b" : "Note book",
+  "c" : "Lecture note",
+  "d" : "Note",
+  "no" : 2,
+  "question" : "We skim because we want to make utmost use of our________"
+}, {
+  "a" : "Pre_reading",
+  "answer" : "Pre_reading",
+  "b" : "Over_view",
+  "c" : "Review",
+  "d" : "Skim reading",
+  "no" : 3,
+  "question" : "________ is also known as preview reading "
+}, {
+  "a" : "Context clues",
+  "answer" : "Active",
+  "b" : "Proper eye",
+  "c" : "Active",
+  "d" : "Knowledge of one's speed",
+  "no" : 4,
+  "question" : "Which is not required in speed reading"
+}, {
+  "a" : "Connotative sentences",
+  "answer" : "Topic Sentence",
+  "b" : "semantic field",
+  "c" : "Meaningful clusters",
+  "d" : "Topic Sentence",
+  "no" : 5,
+  "question" : "Which is of great relevance in summarizing a text"
+} ]
