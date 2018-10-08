@@ -32,11 +32,17 @@ public class MainActivity extends AppCompatActivity {
     private Button summit,next,back;
 
     FirebaseListAdapter adapter;
-
+    Bundle bundle;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
+
             setContentView(R.layout.ativity_main);
+            bundle = getIntent().getExtras();
+            String select = bundle.getString("selected");
+            setTitle(select);
+
+
             lv = findViewById(R.id.list);
             firebaseStuff();
             summit = findViewById(R.id.summit);
@@ -112,7 +118,8 @@ public void summit(){
         finish();
 }
 public void firebaseStuff(){
-    final Query query = FirebaseDatabase.getInstance().getReference().child("ges103/q213_12").orderByChild("no").equalTo(questionNumber);
+    String select = bundle.getString("selected");
+    final Query query = FirebaseDatabase.getInstance().getReference().child(select).orderByChild("no").equalTo(questionNumber);
     final FirebaseListOptions<firehand> options = new FirebaseListOptions.Builder<firehand>()
             .setLayout(R.layout.item_list)
             .setLifecycleOwner(this)
